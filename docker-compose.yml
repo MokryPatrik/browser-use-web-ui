@@ -46,3 +46,10 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
+
+        # ------------------
+    # CPU & Memory limits
+    # ------------------
+    mem_limit: 2g          # Maximum memory usage
+    mem_reservation: 1g    # Soft limit (reservation)
+    cpus: 1.0              # Limit to 1 CPU core
